@@ -8,7 +8,9 @@ It was created with direct mode in mind, because as of today in 2025-02-09:
 
 It uses the open source React Library https://mui.com/
 
-As of 2025-02-09, it tries to resolve all the hierarchy level into a single unique key available
+As of 2025-02-09, it tries to resolve all the hierarchy level into a single unique key assumed to be the leaf (last column dragged and dropped in PowerBI).
+Reason: Try keep using BasicFilter instead of higher level Filters like TupleFilter and AdvancedFilter https://learn.microsoft.com/en-us/power-bi/developer/visuals/filter-api because these are incomatible with Dynamic Parameter.
+Pitfall: When using the filter as dynamic parameter, it fails after ~950 values (of 10 char each) with an error like "query is to complex" (tested with BigQuery connector).
 
 # Setup your env
 
