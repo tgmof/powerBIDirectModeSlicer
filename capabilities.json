@@ -1,0 +1,61 @@
+{
+    "dataRoles": [
+        {
+            "name": "Columns",
+            "displayName": "Columns",
+            "displayNameKey": "Visual_Columns",
+            "kind": "Grouping"
+        }
+    ],
+    "objects": {
+        "general": {
+            "properties": {
+                "filter": {
+                    "displayName": "filter",
+                    "type": {
+                        "filter": true
+                    }
+                }
+            }
+        },
+        "slicerSettings": {
+            "properties": {
+                "multiSelect": {
+                    "type": {
+                        "bool": true
+                    }
+                }
+            }
+        }
+    },
+    "suppressDefaultTitle": true,
+    "supportsSynchronizingFilterState": true,
+    "supportsMultiVisualSelection": true,
+    "sorting": {
+        "implicit": {
+            "clauses": [
+                {
+                    "role": "Columns",
+                    "direction": 1
+                }
+            ]
+        }
+    },
+    "dataViewMappings": [
+        {
+            "table": {
+                "rows": {
+                    "for": {
+                        "in": "Columns"
+                    },
+                    "dataReductionAlgorithm": {
+                        "window": {
+                            "count": 10000
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "privileges": []
+}

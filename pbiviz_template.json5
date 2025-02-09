@@ -1,0 +1,52 @@
+{
+  // taken from https://learn.microsoft.com/en-us/power-bi/developer/visuals/visual-project-structure
+    "visual": {
+       // The visual's internal name.
+      "name": "<visual project name>",
+  
+      // The visual's display name.
+      "displayName": "<visual project name>",
+  
+      // The visual's unique ID.
+      "guid": "<visual project name>23D8B823CF134D3AA7CC0A5D63B20B7F",
+  
+      // The name of the visual's main class. Power BI creates the instance of this class to start using the visual in a Power BI report.
+      "visualClassName": "Visual",
+  
+      // The visual's version number.
+      "version": "1.0.0.0",
+      
+      // The visual's description (optional)
+      "description": "",
+  
+      // A URL linking to the visual's support page (optional).
+      "supportUrl": "",
+  
+      // A link to the source code available from GitHub (optional).
+      "gitHubUrl": ""
+    },
+    // The version of the Power BI API the visual is using.
+    "apiVersion": "2.6.0",
+  
+    // The name of the visual's author and email.
+    "author": { "name": "", "email": "" },
+  
+    // 'icon' holds the path to the icon file in the assets folder; the visual's display icon.
+    "assets": { "icon": "assets/icon.png" },
+  
+    // Contains the paths for JS libraries used in the visual.
+    // Note: externalJS' isn't used in the Power BI visuals tool version 3.x.x or higher.
+    "externalJS": null,
+  
+    // The path to the 'visual.less' style file.
+    "style": "style/visual.less",
+  
+    // The path to the `capabilities.json` file.
+    "capabilities": "capabilities.json",
+  
+    // The path to the `dependencies.json` file which contains information about R packages used in R based visuals.
+    "dependencies": null,
+  
+    // An array of paths to files with localizations.
+    "stringResources": []
+  }
